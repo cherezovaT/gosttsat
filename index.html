@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Студенческий справочник по оформлению отчётов: структура, текст, заголовки, списки, рисунки, формулы, таблицы, приложения и источники.">
+  <title>Оформление отчёта по ГОСТ — справочник</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Оформление отчёта — на главную">
+        <span class="brand-mark">ЦАТ</span>
+        <span class="brand-text">
+          <span>Справочник ГОСТ</span>
+        </span>
+      </a>
+
+      <button class="mobile-menu" id="menuBtn" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="mainNav" aria-label="Основная навигация">
+        <a class="active" href="#top">Главная</a>
+        <a href="#format">Оформление</a>
+        <a href="#checklist">Чек-лист</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-box">
+          <div class="hero-content">
+            <span class="eyebrow">Справочник по оформлению</span>
+            <h1>Оформление отчёта по ГОСТ</h1>
+            <p class="lead">
+              Понятная структура отчёта, основные правила оформления и готовые примеры.
+              Используйте справочник как основу, а перед сдачей сверяйте требования с методичкой кафедры
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#format">Перейти к правилам</a>
+              <a class="btn secondary" href="#checklist">Открыть чек-лист</a>
+            </div>
+          </div>
+          <div class="hero-decoration" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="selector section-shell" id="types" aria-labelledby="types-title">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <div>
+          <h2 id="types-title">Учитывайте тип работы</h2>
+          <p>Базовая структура одинакова, но отдельные требования могут отличаться.</p>
+        </div>
+      </div>
+
+      <div class="report-list">
+        <details class="report-card">
+          <summary>
+            <span class="report-card-num">01</span>
+            <span>Отчёт по практике</span>
+            <span class="report-card-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Типовая последовательность элементов отчёта:</p>
+            <ol>
+              <li>Титульный лист</li>
+              <li>Реферат</li>
+              <li>Содержание</li>
+              <li>Введение</li>
+              <li>Основная часть</li>
+              <li>Заключение</li>
+              <li>Список использованных источников</li>
+              <li>Приложения</li>
+            </ol>
+            <div class="example compact-example">
+              <strong>Пример</strong>
+              <p>После титульного листа размещаются реферат и содержание, затем идут введение, основная часть и заключение.</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="report-card">
+          <summary>
+            <span class="report-card-num">02</span>
+            <span>Отчёт к курсовой работе</span>
+            <span class="report-card-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="report-card-content">
+            <p>В справочнике используется та же базовая последовательность элементов, если иное не указано в методических требованиях:</p>
+            <ol>
+              <li>Титульный лист</li>
+              <li>Реферат</li>
+              <li>Содержание</li>
+              <li>Введение</li>
+              <li>Основная часть</li>
+              <li>Заключение</li>
+              <li>Список использованных источников</li>
+              <li>Приложения</li>
+            </ol>
+            <div class="example compact-example">
+              <strong>Пример</strong>
+              <p>Главы основной части получают номера, например <code>1 Анализ предметной области</code> и <code>2 Разработка решения</code>.</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="report-card">
+          <summary>
+            <span class="report-card-num">03</span>
+            <span>Пояснительная записка к ВКР</span>
+            <span class="report-card-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Для пояснительной записки используется развернутая структура с основной частью, иллюстрациями, таблицами, формулами и приложениями.</p>
+            <div class="example compact-example">
+              <strong>Пример структуры</strong>
+              <p><code>1 Анализ требований</code> → <code>1.1 Постановка задачи</code> → <code>1.2 Анализ аналогов</code>.</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="report-card">
+          <summary>
+            <span class="report-card-num">04</span>
+            <span>Научная статья</span>
+            <span class="report-card-icon" aria-hidden="true">+</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Для научной статьи требования определяются конкретным изданием, конференцией или редакцией. Их нельзя автоматически переносить из правил оформления отчёта.</p>
+            <div class="example compact-example">
+              <strong>Пример</strong>
+              <p>Перед подготовкой статьи проверьте требования редакции: объём, структуру, оформление ссылок, рисунков, таблиц и списка литературы.</p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <div class="container layout">
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <div class="sidebar-title">Разделы</div>
+          <label class="search-wrap">
+            <span class="sr-only">Поиск по правилам</span>
+            <input class="search" id="search" type="search" placeholder="Поиск по правилам…" autocomplete="off">
+          </label>
+          <nav class="side-nav" id="sideNav" aria-label="Разделы справочника">
+            <a href="#format"><span>02</span>Базовое оформление</a>
+            <a href="#structure"><span>03</span>Структура отчёта</a>
+            <a href="#abstract"><span>04</span>Реферат</a>
+            <a href="#contents"><span>05</span>Содержание</a>
+            <a href="#headings"><span>06</span>Заголовки</a>
+            <a href="#lists"><span>07</span>Перечисления</a>
+            <a href="#figures"><span>08</span>Рисунки</a>
+            <a href="#formulas"><span>09</span>Формулы</a>
+            <a href="#tables"><span>10</span>Таблицы</a>
+            <a href="#appendices"><span>11</span>Приложения</a>
+            <a href="#sources"><span>12</span>Источники</a>
+            <a href="#checklist"><span>13</span>Финальная проверка</a>
+          </nav>
+        </div>
+      </aside>
+
+      <div class="content" id="content">
+        <section class="section" id="format">
+          <div class="section-head">
+            <span class="section-num">02</span>
+            <div>
+              <h2>Базовое оформление</h2>
+              <p>Настройки, которые применяются к основному тексту отчёта.</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Шрифт</div>
+              <div class="rule-text">Times New Roman, обычное начертание, чёрный цвет, 14 пт</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Выравнивание</div>
+              <div class="rule-text">Основной текст выравнивается по ширине</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Межстрочный интервал</div>
+              <div class="rule-text">Используется полуторный интервал</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Абзац</div>
+              <div class="rule-text">Абзацный отступ — 1,25 см. Дополнительные интервалы до и после абзаца не задаются, если методичка не требует иного</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Поля</div>
+              <div class="rule-text">Левое — 3,0 см; правое — 1,5 см; верхнее и нижнее — 2,0 см</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Нумерация страниц</div>
+              <div class="rule-text">Используются арабские цифры. Номер размещается внизу страницы по центру, если такой вариант установлен требованиями работы</div>
+            </div>
+          </div>
+
+          <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Пошаговая инструкция с картинками</p>
+            <div class="example compact-example">
+              <p>Пошаговая инструкция с картинками</p>
+            </div>
+          </div>
+        </details>
+
+        </section>
+
+        <section class="section" id="abstract">
+          <div class="section-head">
+            <span class="section-num">04</span>
+            <div>
+              <h2>Реферат</h2>
+              <p>Кратко описывает содержание и основные результаты работы.</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Ключевые слова</div>
+              <div class="rule-text">Приводятся от 5 до 15 слов или словосочетаний, отражающих содержание работы. В черновике они указаны прописными буквами и разделены запятыми.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Содержание</div>
+              <div class="rule-text">Указываются объект исследования или разработки, цель работы, применяемые методы и основные результаты.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Сведения о работе</div>
+              <div class="rule-text">При необходимости приводят количество страниц пояснительной записки, рисунков, таблиц и использованных источников.</div>
+            </div>
+          </div>
+
+          <div class="example">
+            <div class="example-title">Пример</div>
+            <p class="sample-text"><strong>Ключевые слова:</strong> ОТЧЁТ, ОФОРМЛЕНИЕ, ГОСТ, WORD, ТАБЛИЦЫ, РИСУНКИ, ФОРМУЛЫ.</p>
+            <p class="sample-text"><strong>Цель работы:</strong> систематизировать требования к оформлению отчёта и представить их в удобном для студента виде.</p>
+          </div>
+
+          <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Пошаговая инструкция с картинками</p>
+            <div class="example compact-example">
+              <p>Пошаговая инструкция с картинками</p>
+            </div>
+          </div>
+        </details>
+
+        </section>
+
+        <section class="section" id="contents">
+          <div class="section-head">
+            <span class="section-num">05</span>
+            <div>
+              <h2>Содержание</h2>
+              <p>Показывает структуру работы и страницы, на которых расположены её элементы.</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Заглавные элементы</div>
+              <div class="rule-text">СОДЕРЖАНИЕ, ВВЕДЕНИЕ, ЗАКЛЮЧЕНИЕ, СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ и ПРИЛОЖЕНИЯ не нумеруются как разделы.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Ненумерованные элементы</div>
+              <div class="rule-text">Содержание, введение, заключение, список использованных источников и приложения в основной структуре не получают порядкового номера раздела</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Нумерованные элементы</div>
+              <div class="rule-text">Главы и параграфы имеют нумерацию. Пример главы: "1 ТЕОРЕТИЧЕСКИЕ ИССЛЕДОВАНИЯ". Пример параграфа: "1.1 Исследование целевой аудитории". Обратите внимание: 1. после номера не ставится точка; 2. Главы начинаются с новой страницы, а параграфы нет - они следуют друг за другом внутри главы. </div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Уровни</div>
+              <div class="rule-text">Подразделы второго уровня визуально отделяются от разделов дополнительным отступом; в исходном варианте используется шаг 0,5 см.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Номера страниц</div>
+              <div class="rule-text">Номера страниц выравниваются по правому краю и соединяются с названием элемента отточиями.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Шрифт</div>
+              <div class="rule-text">Для содержания используется Times New Roman, 14 пт, обычное начертание, чёрный цвет и полуторный интервал, если это предусмотрено требованиями.</div>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example-title">Пример оформления</div>
+            <div class="toc-preview">
+              <div><span>1 Анализ предметной области</span><span>5</span></div>
+              <div><span class="indent">1.1 Характеристика объекта</span><span>6</span></div>
+              <div><span class="indent">1.2 Анализ аналогов</span><span>8</span></div>
+              <div><span>2 Разработка решения</span><span>12</span></div>
+              <div><span>ЗАКЛЮЧЕНИЕ</span><span>25</span></div>
+            </div>
+          </div>
+
+          <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Пошаговая инструкция с картинками</p>
+            <div class="example compact-example">
+              <p>Пошаговая инструкция с картинками</p>
+            </div>
+          </div>
+        </details>
+
+        </section>
+
+        <section class="section" id="headings">
+          <div class="section-head">
+            <span class="section-num">06</span>
+            <div>
+              <h2>Заголовки разделов</h2>
+              <p>Номер и название должны быть оформлены единообразно на протяжении всей работы.</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Нумерация</div>
+              <div class="rule-text">Разделы основной части нумеруются арабскими цифрами. Для подразделов используется многоуровневая нумерация: 1, 1.1, 1.2, 2, 2.1 и т. д.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Точка в конце</div>
+              <div class="rule-text">В конце номера и текста заголовка точка не ставится.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Выделение</div>
+              <div class="rule-text">Заголовок выделяется полужирным шрифтом. Регистр букв и способ выравнивания должны быть одинаковыми для заголовков одного уровня.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">После заголовка</div>
+              <div class="rule-text">После заголовка оставляют предусмотренный интервал перед основным текстом; не следует добавлять несколько пустых абзацев вручную.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Особые элементы</div>
+              <div class="rule-text">СОДЕРЖАНИЕ, ВВЕДЕНИЕ, ЗАКЛЮЧЕНИЕ, СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ и ПРИЛОЖЕНИЯ оформляются отдельно от нумерованных разделов.</div>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example-title">Пример оформления</div>
+            <div class="heading-preview">
+              <strong>1 АНАЛИЗ ПРЕДМЕТНОЙ ОБЛАСТИ</strong>
+              <strong>1.1 Характеристика объекта исследования</strong>
+              <p>Текст подраздела начинается после заголовка и оформляется в соответствии с базовыми параметрами основного текста.</p>
+              <strong>1.2 Анализ существующих решений</strong>
+            </div>
+          </div>
+
+          <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Пошаговая инструкция с картинками</p>
+            <div class="example compact-example">
+              <p>Пошаговая инструкция с картинками</p>
+            </div>
+          </div>
+        </details>
+
+        </section>
+
+        <section class="section" id="lists">
+          <div class="section-head">
+            <span class="section-num">07</span>
+            <div>
+              <h2>Перечисления</h2>
+              <p>Способ оформления списка выбирают в зависимости от его структуры.</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Простой список</div>
+              <div class="rule-text">Для перечисления без отдельной нумерации перед позициями можно использовать тире.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Список с буквами</div>
+              <div class="rule-text">Если на отдельные позиции требуется ссылаться в дальнейшем, допускается буквенное обозначение с закрывающей скобкой — а), б), в).</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Список с цифрами</div>
+              <div class="rule-text">Для последовательности действий или фиксированного количества пунктов удобно использовать арабские цифры.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Вложенный список</div>
+              <div class="rule-text">Уровни вложенности оформляются последовательно и имеют одинаковые отступы во всей работе.</div>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example-title">Пример</div>
+            <div class="list-preview">
+              <p>Для подготовки отчёта необходимо:</p>
+              <ol>
+                <li>настроить параметры страницы;</li>
+                <li>оформить заголовки разделов;</li>
+                <li>проверить рисунки и таблицы;</li>
+                <li>проверить список источников.</li>
+              </ol>
+            </div>
+          </div>
+
+          <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Пошаговая инструкция с картинками</p>
+            <div class="example compact-example">
+              <p>Пошаговая инструкция с картинками</p>
+            </div>
+          </div>
+        </details>
+
+        </section>
+
+        <section class="section" id="figures">
+          <div class="section-head">
+            <span class="section-num">08</span>
+            <div>
+              <h2>Рисунки</h2>
+              <p>Рисунок должен быть связан с текстом, иметь номер и понятное название.</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Ссылка</div>
+              <div class="rule-text">До рисунка в тексте должна быть ссылка на него: «Макет главной страницы представлен на рисунке 1».</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Подпись</div>
+              <div class="rule-text">Под рисунком указывают его номер и название. Точку в конце подписи не ставят, если это установлено используемыми требованиями.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Нумерация</div>
+              <div class="rule-text">Возможна сквозная нумерация или нумерация в пределах раздела, например «Рисунок 2.1 — Редактор кода».</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Читаемость</div>
+              <div class="rule-text">Изображение должно оставаться читаемым после вставки в документ. Не растягивайте его непропорционально.</div>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example-title">Пример оформления</div>
+            <p>Макет главной страницы представлен на рисунке 1.</p>
+            <div class="figure-placeholder" aria-label="Пример области рисунка">Область рисунка</div>
+            <p class="caption">Рисунок 1 — Макет главной страницы сайта</p>
+          </div>
+
+          <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Пошаговая инструкция с картинками</p>
+            <div class="example compact-example">
+              <p>Пошаговая инструкция с картинками</p>
+            </div>
+          </div>
+        </details>
+
+        </section>
+
+        <section class="section" id="formulas">
+          <div class="section-head">
+            <span class="section-num">09</span>
+            <div>
+              <h2>Формулы и уравнения</h2>
+              <p>Формулы отделяются от текста и сопровождаются необходимыми пояснениями.</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Размещение</div>
+              <div class="rule-text">Формулу размещают на отдельной строке и визуально отделяют от окружающего текста.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Нумерация</div>
+              <div class="rule-text">Если на формулу есть ссылки, ей присваивают номер. Ссылка в тексте оформляется, например, так: «… согласно формуле (1)».</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Перенос</div>
+              <div class="rule-text">При переносе длинного выражения используют математический знак в соответствии с принятой системой оформления и повторяют его на следующей строке.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Пояснения</div>
+              <div class="rule-text">После формулы приводят пояснения к символам и коэффициентам. Первая строка пояснения начинается со слова «где» без двоеточия.</div>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example-title">Пример</div>
+            <div class="formula-row">
+              <span>S = a · b</span>
+              <span>(1)</span>
+            </div>
+            <p class="formula-note">где S — площадь прямоугольника; a — длина; b — ширина.</p>
+          </div>
+
+        <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Пошаговая инструкция с картинками</p>
+            <div class="example compact-example">
+              <p>Пошаговая инструкция с картинками</p>
+            </div>
+          </div>
+        </details>
+
+        </section>
+
+        <section class="section" id="tables">
+          <div class="section-head">
+            <span class="section-num">10</span>
+            <div>
+              <h2>Таблицы</h2>
+              <p>Таблица должна иметь ссылку в тексте, номер и название.</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Ссылка</div>
+              <div class="rule-text">До таблицы в тексте приводится ссылка, например: «Результаты сравнения представлены в таблице 1».</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Название</div>
+              <div class="rule-text">Над таблицей указывают её номер и название: «Таблица 1 — Результаты сравнения».</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Нумерация</div>
+              <div class="rule-text">Можно использовать сквозную нумерацию или нумерацию в пределах раздела, например «Таблица 2.1».</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Перенос</div>
+              <div class="rule-text">При переносе большой таблицы используют обозначение «Продолжение таблицы 1», а на последней части — «Окончание таблицы 1», если это предусмотрено методикой.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Шрифт</div>
+              <div class="rule-text">Размер шрифта внутри таблицы может быть уменьшен для удобства размещения данных, если это допускают требования работы.</div>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example-title">Пример оформления</div>
+            <div class="table-title">Таблица 1 — Результаты сравнения</div>
+            <table class="example-table">
+              <thead>
+                <tr><th>Показатель</th><th>Вариант 1</th><th>Вариант 2</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Время обработки</td><td>12 с</td><td>8 с</td></tr>
+                <tr><td>Количество операций</td><td>15</td><td>10</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Пошаговая инструкция с картинками</p>
+            <div class="example compact-example">
+              <p>Пошаговая инструкция с картинками</p>
+            </div>
+          </div>
+        </details>
+
+        </section>
+
+        <section class="section" id="appendices">
+          <div class="section-head">
+            <span class="section-num">11</span>
+            <div>
+              <h2>Приложения</h2>
+              <p>В приложения выносят объёмные и вспомогательные материалы.</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Что выносить</div>
+              <div class="rule-text">В приложения можно вынести дополнительные рисунки, фрагменты исходного кода, большие таблицы, акты и другие материалы, которые дополняют основную часть.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Обозначение</div>
+              <div class="rule-text">Приложения обозначаются русскими буквами: А, Б, В и т. д. Если приложение одно, используется обозначение «ПРИЛОЖЕНИЕ А».</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Новая страница</div>
+              <div class="rule-text">Каждое приложение начинается с новой страницы.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Ссылки</div>
+              <div class="rule-text">На каждое приложение должна быть ссылка в основном тексте, чтобы было понятно, зачем оно включено в работу.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Рисунки и таблицы</div>
+              <div class="rule-text">Для нумерации внутри приложения используют его обозначение, например «Рисунок А.1» или «Таблица А.1».</div>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example-title">Пример</div>
+            <div class="appendix-preview">
+              <strong>ПРИЛОЖЕНИЕ А</strong>
+              <span>Исходные данные проекта</span>
+              <span>Рисунок А.1 — Исходная схема</span>
+              <span>Таблица А.1 — Исходные данные</span>
+            </div>
+          </div>
+
+        <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Пошаговая инструкция с картинками</p>
+            <div class="example compact-example">
+              <p>Пошаговая инструкция с картинками</p>
+            </div>
+          </div>
+        </details>
+
+        </section>
+
+        <section class="section" id="sources">
+          <div class="section-head">
+            <span class="section-num">12</span>
+            <div>
+              <h2>Список использованных источников</h2>
+              <p>Каждый источник из списка должен быть связан с его упоминанием в тексте.</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Ссылка в тексте</div>
+              <div class="rule-text">Ссылки на источники оформляются в квадратных скобках с номером источника: [1], [2] и т. д.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Порядок</div>
+              <div class="rule-text">В данном варианте справочника источники располагаются в порядке появления ссылок в тексте.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Нумерация</div>
+              <div class="rule-text">Используются арабские цифры без точки. Один и тот же источник при повторном обращении сохраняет свой номер.</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Повторная ссылка</div>
+              <div class="rule-text">Повторное использование источника не требует создания новой записи в списке: используется тот же номер.</div>
+            </div>
+          </div>
+          <div class="example">
+            <div class="example-title">Пример</div>
+            <p>В тексте: «Требования к структуре отчёта рассматриваются в источнике [1]».</p>
+            <div class="source-preview">
+              <span>1</span>
+              <p>ГОСТ. Общие требования к оформлению документации. — М.: Издательство, 2024.</p>
+            </div>
+          </div>
+
+        <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Пошаговая инструкция с картинками</p>
+            <div class="example compact-example">
+              <p>Пошаговая инструкция с картинками</p>
+            </div>
+          </div>
+        </details>
+
+        </section>
+
+        <section class="section" id="checklist">
+          <div class="section-head">
+            <span class="section-num">13</span>
+            <div>
+              <h2>Финальная проверка</h2>
+              <p>Перед сдачей пройдите список сверху вниз и исправьте найденные несоответствия.</p>
+            </div>
+          </div>
+          <div class="checklist">
+            <label><input type="checkbox">Поля настроены: левое — 3 см, правое — 1,5 см, верхнее и нижнее — 2 см.</label>
+            <label><input type="checkbox">Основной текст: Times New Roman, 14 пт, чёрный цвет.</label>
+            <label><input type="checkbox">Текст выровнен по ширине.</label>
+            <label><input type="checkbox">Межстрочный интервал — 1,5.</label>
+            <label><input type="checkbox">Абзацный отступ — 1,25 см.</label>
+            <label><input type="checkbox">Интервалы до и после абзаца — 0 пт.</label>
+            <label><input type="checkbox">Нумерация страниц начинается с Введения.</label>
+            <label><input type="checkbox">Номера страниц стоят снизу по центру, шрифт Times New Roman, 14 пт, чёрный цвет.</label>
+            <label><input type="checkbox">На титульном листе номер страницы не отображается.</label>
+            <label><input type="checkbox">Содержание обновлено после всех правок, нумерация разделов правильная.</label>
+            <label><input type="checkbox">В содержании нет лишних пунктов. Первый пункт - Введение.</label>
+            <label><input type="checkbox">Содежрание написано основным текстом Times New Roman, 14 пт, чёрный цвет. Основные заголовки большими буквами, параграфы без разрядки. Соблюдены правильные отступы слева и настроено выравнивание по ширине.</label>
+            <label><input type="checkbox">Введение, заключение, список источников и приложения не нумеруются.</label>
+            <label><input type="checkbox">Перед каждым рисунком есть ссылка в тексте.</label>
+            <label><input type="checkbox">Подписи рисунков стоят под рисунками.</label>
+            <label><input type="checkbox">Перед каждой таблицей есть ссылка в тексте.</label>
+            <label><input type="checkbox">Названия таблиц стоят над таблицами.</label>
+            <label><input type="checkbox">Все источники из списка упомянуты в тексте в квадратных скобках.</label>
+            <label><input type="checkbox">Приложения начинаются с новой страницы и обозначены буквами.</label>
+          </div>
+          <div class="callout"><strong>Готово?</strong> Если все пункты отмечены, сохраните файл, откройте его заново и убедитесь, что оформление не сбилось. <div class="hero-actions"><button class="btn secondary" id="resetChecklist">Сбросить отметки</button></div>
+        </div></div></div></section>
+
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Справочник предназначен для удобной предварительной проверки оформления учебных работ.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menuBtn');
+    const navigation = document.getElementById('mainNav');
+    const searchInput = document.getElementById('search');
+    const sections = [...document.querySelectorAll('.section')];
+    const sideLinks = [...document.querySelectorAll('.side-nav a')];
+
+    menuButton?.addEventListener('click', () => {
+      const isOpen = navigation.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navigation?.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navigation.classList.remove('open');
+        menuButton?.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    searchInput?.addEventListener('input', (event) => {
+      const query = event.target.value.trim().toLowerCase();
+      sections.forEach((section) => {
+        const matches = !query || section.textContent.toLowerCase().includes(query);
+        section.classList.toggle('hidden', !matches);
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        sideLinks.forEach((link) => link.classList.remove('active'));
+        document.querySelector(`.side-nav a[href="#${entry.target.id}"]`)?.classList.add('active');
+      });
+    }, { rootMargin: '-20% 0px -65% 0px' });
+
+    sections.forEach((section) => observer.observe(section));
+
+
+    const resetButton = document.getElementById('resetChecklist');
+    if (resetButton) {
+      resetButton.addEventListener('click', () => {
+        document.querySelectorAll('.checklist input[type="checkbox"]').forEach((input) => input.checked = false);
+      });
+    }
+
+  </script>
+</body>
+</html>
