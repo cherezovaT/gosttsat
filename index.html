@@ -153,8 +153,10 @@
             <input class="search" id="search" type="search" placeholder="Поиск по правилам…" autocomplete="off">
           </label>
           <nav class="side-nav" id="sideNav" aria-label="Разделы справочника">
-            <a href="#format"><span>02</span>Базовое оформление</a>
-            <a href="#structure"><span>03</span>Структура отчёта</a>
+            <a href="#name"><span>00</span>Названия файлов</a>
+            <a href="#format"><span>01</span>Базовое оформление</a>
+            <a href="#pages"><span>02</span>Нумерация страниц</a>
+            <a href="#title"><span>03</span>Титульник и задание</a>
             <a href="#abstract"><span>04</span>Реферат</a>
             <a href="#contents"><span>05</span>Содержание</a>
             <a href="#headings"><span>06</span>Заголовки</a>
@@ -170,9 +172,39 @@
       </aside>
 
       <div class="content" id="content">
+
+        <section class="section" id="name">
+          <div class="section-head">
+            <span class="section-num">00</span>
+            <div>
+              <h2>Название файлов</h2>
+              <p>Шаблоны названий файлов для сдачи. Обратите внимание на расширение файлов!</p>
+            </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Отчет</div>
+              <div class="rule-text">Отчет_ИвановИИ_1-МД-1.docx</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Презентация</div>
+              <div class="rule-text">Презентация_ИвановИИ_1-МД-1.pdf</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Раздатка</div>
+              <div class="rule-text">Раздатка_ИвановИИ_1-МД-1.pdf</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Видео</div>
+              <div class="rule-text">Видео_ИвановИИ_1-МД-1.mp4</div>
+            </div>
+          </div>
+
+        </section>
+
         <section class="section" id="format">
           <div class="section-head">
-            <span class="section-num">02</span>
+            <span class="section-num">01</span>
             <div>
               <h2>Базовое оформление</h2>
               <p>Настройки, которые применяются к основному тексту отчёта.</p>
@@ -185,24 +217,127 @@
             </div>
             <div class="rule">
               <div class="rule-title">Выравнивание</div>
-              <div class="rule-text">Основной текст выравнивается по ширине</div>
+              <div class="rule-text">Основной текст выравнивается по ширине. Исключение составляют заголовки, рисунки, формулы. О них подробнее в соответствующем разделе</div>
             </div>
             <div class="rule">
               <div class="rule-title">Межстрочный интервал</div>
-              <div class="rule-text">Используется полуторный интервал</div>
+              <div class="rule-text">Используется интервал 1,5</div>
             </div>
             <div class="rule">
               <div class="rule-title">Абзац</div>
-              <div class="rule-text">Абзацный отступ — 1,25 см. Дополнительные интервалы до и после абзаца не задаются, если методичка не требует иного</div>
+              <div class="rule-text">Абзацный отступ — 1,25 см. Дополнительные отступы не задаются</div>
             </div>
             <div class="rule">
               <div class="rule-title">Поля</div>
               <div class="rule-text">Левое — 3,0 см; правое — 1,5 см; верхнее и нижнее — 2,0 см</div>
             </div>
-            <div class="rule">
-              <div class="rule-title">Нумерация страниц</div>
-              <div class="rule-text">Используются арабские цифры. Номер размещается внизу страницы по центру, если такой вариант установлен требованиями работы</div>
+          </div>
+
+          <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+              <p>На рисунке ниже представлена настройка шрифта и выравнивания.</p>
+              <img src="img/01_1.png">
+              <p>По клику на стрелку в правом нижнем углу области настроек "абзац" открывается окно для настройки остальных параметров. Пример заполнения на рисунке ниже.</p>
+              <img src="img/01_2.png">
+              <p>Для настройки полей перейдите Макет - Поля - Настраиваемые поля. Введите необходимые значения.</p>
+              <img src="img/01_6.png">
+          </div>
+        </details>
+        <details class="example">
+          <summary>
+            <span>Правильный пример</span>
+          </summary>
+          <div class="report-card-content">
+              <p>На рисунке ниже представлен правильный пример оформления основного текста</p>
+              <img src="img/01_3.png">
+
+              <p>Обратите внимание на линейки над страницей. По ним видно, что абзацный отступ 1.25 см, левое поле 3см, правое поле 1см, верхнее поле 2см. </p> 
+              <p>Абзацный отступ можно также настроить переставив маркеры на линейке в положение как на рисунке.</p>
+              <p> Чтобы включить линейки: Вид - Отображение - Линейки</p>
+          </div>
+        </details>
+        <details class="example">
+          <summary>
+            <span>Ошибки</span>
+          </summary>
+          <div class="report-card-content">
+              <p>Абзацный отступ больше чем нужно - 2см</p>
+              <img src="img/01_4.png">
+              <p>Нет выравнивания по ширине</p>
+              <img src="img/01_5.png">
+          </div>
+        </details>
+        </section>
+
+        <section class="section" id="pages">
+          <div class="section-head">
+            <span class="section-num">02</span>
+            <div>
+              <h2>Нумерация страниц</h2>
+              <p>Настройка нумерации страниц, работа с разделами и колонтитулами</p>
             </div>
+          </div>
+          <div class="rules">
+            <div class="rule">
+              <div class="rule-title">Расположение</div>
+              <div class="rule-text">Номер размещается внизу страницы по центру</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Шрифт</div>
+              <div class="rule-text">Также как на основном тексте: Times New Roman, обычное начертание, чёрный цвет, 14 пт</div>
+            </div>
+            <div class="rule">
+              <div class="rule-title">Важно!</div>
+              <div class="rule-text">Нумерация начинается с Введения. Настраивается через разрыв разделов</div>
+            </div>
+          </div>
+
+          <details class="example">
+          <summary>
+            <span>Как настроить</span>
+          </summary>
+          <div class="report-card-content">
+            <p>Исходное состояние страниц без нумерации</p>
+            <img src="img/02_1.png">
+            <p>Добавляем нумерацию: Вставка - Колонтитулы - Номер страницы - Внизу станицы - Номер страницы по центру</p>
+            <img src="img/02_2.png">
+            <p>Дважды кликнув на появившийся номер страницы переходим в режим редактирования колонтитулов, удаляем лишние строки и ставим нужные настройки шрифта: Times New Roman, обычное начертание, чёрный цвет, 14 пт, выравнивание по центру, абзацный отступ 0см.</p>
+            <img src="img/02_5.png">
+            <p>В конце страницы перед Введением (Содержание) добавляем разрыв раздела: Макет - Параметры страницы - Разрывы - Следующая страница</p>
+            <img src="img/02_6.png">
+            <p>Пример результата на рисунке ниже. Чтобы представленные ниже разделители нужно включить Непечатаемые символы. Перейдите на вкладку «Главная», в группе «Абзац» нажмите на кнопку с символом ¶</p>
+            <img src="img/02_7.png">
+            <p>Снова зайдите в режим редактирования колонтитулов дважды кликнув на номер страницы. Выберите страницу из 2 раздела и выключите параметр: Колонтитулы - Переходы - Как в предыдущем. После этого вы можете выделить номер страницы в первом разделе и удалить его. Выключение параметра "Как в предыдущем" позволит сохранить нумерацию во 2 разделе.</p>
+            <img src="img/02_8.png">
+            <p>Ниже на примере видно, что нумерация сохранилась только на 4 странице</p>
+            <img src="img/02_9.png">
+            <p>Далее настройте правильный номер страницы: Вставка - Колонтитулы - Номер страницы - Формат номеров страниц</p>
+            <img src="img/02_10.png">
+            <p>Установите нужное значение. Обычно Введение - 4 страница</p>
+            <img src="img/02_11.png">
+            <p>При подсчете страниц, учитывайте титульник и задание. Обратите внимание, что задание считается как одна страница, т.к. печатается с двух сторон на одном листе!</p>
+            
+          </div>
+        </details>
+
+        </section>
+
+
+
+        <section class="section" id="title">
+          <div class="section-head">
+            <span class="section-num">03</span>
+            <div>
+              <h2>Титульник и задание</h2>
+              <p>Работа с готовыми шаблонами, вставка в отчет и печать для сдачи</p>
+            </div>
+          </div>
+          <div class="rules">
+
+
           </div>
 
           <details class="example">
@@ -218,6 +353,7 @@
         </details>
 
         </section>
+
 
         <section class="section" id="abstract">
           <div class="section-head">
