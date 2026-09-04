@@ -401,12 +401,14 @@ h2 {
 
 .report-card-content {
   padding: 28px;
+  padding-top: 0px;
   color: #4f5564;
   font-size: 14px;
 }
 
 .report-card-content p {
-  margin-bottom: 8px;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
 .report-card-content ol {
@@ -785,6 +787,14 @@ code {
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 14px;
+}
+
+.nb{
+  margin-bottom: 10px;
+}
+img{
+  border: 1px solid var(--line);
+  max-width: 100%;
 }
 
 @media (max-width: 1000px) {
